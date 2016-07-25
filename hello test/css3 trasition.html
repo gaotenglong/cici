@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+
+       .img{
+           width:600px;
+           : -webkit-transition: 2s cubic-bezier(.83,.97,.05,1.44);
+           -moz-transition: 2s 1s;
+           -ms-transition: 2s 1s;
+           -o-transition: 2s 1s;
+           transition: 2s cubic-bezier(.83,.97,.05,1.44);
+       }
+        .img:hover{
+           width: 400px;
+        }
+
+        .a{
+            width:200px;
+            height:200px;
+            float:right;
+            background:#47c9af;
+        }
+        .a:hover{
+            -webkit-animation: 1s rainbow;
+            animation: 1s rainbow;
+        }
+       @-webkit-keyframes rainbow {
+           0% { background: #c00; }
+           50% { background: orange; }
+           100% { background: yellowgreen; }
+       }
+
+       @keyframes rainbow {
+           0% { background: #c00; }
+           50% { background: orange; }
+           100% { background: yellowgreen; }
+       }
+
+    </style>
+
+</head>
+<body>
+
+<img class="img" src="./img/6.png" alt=""/>
+    <div class="a">
+
+    </div>
+</body>
+</html>
